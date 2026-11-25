@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Võ Hoài Nam — Cửa Hàng Key Bản Quyền 3D</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Orbitron:wght@600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Orbitron"', 'sans-serif'],
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            cyber: {
+              cyan: '#00f0ff',
+              purple: '#9d4edd',
+              pink: '#ff2a85',
+              dark: '#050711',
+              panel: 'rgba(12, 17, 36, 0.76)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root {
+      --cyan: #00f0ff;
+      --purple: #9d4edd;
+      --pink: #ff2a85;
+      --bg-dark: #050711;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-dark);
+      color: #f8fafc;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background: radial-gradient(circle at 15% 15%, rgba(0, 240, 255, 0.08), transparent 40%),
+                  radial-gradient(circle at 85% 20%, rgba(157, 78, 221, 0.11), transparent 45%),
+                  radial-gradient(circle at 50% 85%, rgba(255, 42, 133, 0.07), transparent 45%),
+                  #050711;
+      overflow-x: hidden;
+    }
+
+    #bg-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 
